@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Atelier Gridは、知足湧生（ともたりはるき）が直作したデザイナー向けポートフォリオLPとCMS記事ページのデモサイトです。" />
+  <meta property="og:title" content="Atelier Grid | Designer Portfolio & CMS Studio" />
+  <meta property="og:description" content="作品、制作プロセス、CMS記事、問い合わせ導線までを統合したポートフォリオWebサイト。" />
+  <meta property="og:image" content="assets/images/hero-studio.png" />
+  <meta name="theme-color" content="#07090d" />
+  <title>Atelier Grid | Designer Portfolio & CMS Studio</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Atelier Grid home">
+        <span class="brand-mark">AG</span>
+        <span>Atelier Grid</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#works">Works</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#process">Process</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-bg" src="assets/images/hero-studio.png" alt="" fetchpriority="high" />
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio CMS / Designer Landing System</p>
+          <h1 id="hero-title"><span>Atelier</span><span>Grid</span></h1>
+          <p class="hero-lede">作品の美しさ、制作の思考、依頼までの導線をひとつの体験に束ねる、デザイナー向けポートフォリオWebサイト。ランディングページとCMS記事を同じ世界観で設計しています。</p>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="btn btn-primary" href="#journal">記事を読む</a>
+            <a class="btn btn-ghost" href="#works">構成を見る</a>
+          </div>
+        </div>
+
+        <div class="hero-metrics" aria-label="Portfolio highlights">
+          <div>
+            <span class="metric-value">12</span>
+            <span class="metric-label">CMS Articles</span>
+          </div>
+          <div>
+            <span class="metric-value">4</span>
+            <span class="metric-label">Case Modules</span>
+          </div>
+          <div>
+            <span class="metric-value">16</span>
+            <span class="metric-label">Visual Assets</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Portfolio strengths">
+      <div class="container signal-grid">
+        <p><strong>情報設計</strong><span>3分で強みが伝わる導線</span></p>
+        <p><strong>CMS設計</strong><span>記事運用まで見える構造</span></p>
+        <p><strong>ブランド体験</strong><span>色・余白・言葉の統一</span></p>
+        <p><strong>レスポンシブ</strong><span>採用担当者のスマホ閲覧にも対応</span></p>
+      </div>
+    </section>
+
+    <section class="section split-section" id="works">
+      <div class="container split-grid">
+        <figure class="media-frame reveal">
+          <img src="assets/images/process-dashboard.png" alt="制作プロセスをまとめたダッシュボードのビジュアル" loading="lazy" />
+        </figure>
+        <div class="section-copy reveal">
+          <p class="eyebrow">Featured Work</p>
+          <h2>作品を並べるだけで終わらせない。思考、成果、更新性まで見せるポートフォリオ。</h2>
+          <p>LPは「誰のために、何を、どんな判断で作ったのか」を最短距離で伝える構成に再設計。ケーススタディ、制作プロセス、CMS記事、問い合わせ導線を分けずに、ひとつの評価体験として組み上げています。</p>
+          <dl class="definition-list">
+            <div><dt>First View</dt><dd>肩書きより先に世界観と完成度が伝わるビジュアル設計。</dd></div>
+            <div><dt>Case Study</dt><dd>課題、仮説、アウトプット、成果指標を同じ粒度で提示。</dd></div>
+            <div><dt>Editorial CMS</dt><dd>記事を制作思想の証拠として蓄積できる投稿ページ群。</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase-section" aria-labelledby="showcase-title">
+      <div class="container">
+        <figure class="showcase-frame reveal">
+          <img src="assets/images/portfolio-showcase.png" alt="CMS、デザインシステム、レスポンシブ画面を統合したポートフォリオWebサイトのショーケース画像" loading="lazy" />
+          <figcaption>
+            <p class="meta">Responsive CMS System</p>
+            <h2 id="showcase-title">LP、CMS、スマホ表示まで、同じアートディレクションでつなぐ。</h2>
+            <p>作品画像だけではなく、記事運用、デザインシステム、問い合わせ導線まで一枚の世界観で見せ、デザイナーとしての総合力が伝わる構成にしています。</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2>ポートフォリオに必要な“見栄え”と“判断材料”を同時に置く。</h2>
+        </div>
+        <div class="capability-grid">
+          <article class="card reveal">
+            <span class="card-number">01</span>
+            <h3>Art Direction</h3>
+            <p>生成ビジュアル、タイポグラフィ、余白、色彩の強弱で、最初の数秒に記憶される画面を作ります。</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-number">02</span>
+            <h3>UI/UX Narrative</h3>
+            <p>機能説明ではなく、ユーザーの流れに沿って「なぜこの設計なのか」が伝わる構成に整えます。</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-number">03</span>
+            <h3>CMS Editorial</h3>
+            <p>記事一覧、カテゴリ、タグ、関連記事、読了導線を用意し、運用して育つサイトにします。</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-number">04</span>
+            <h3>Conversion Design</h3>
+            <p>問い合わせ前に必要な安心材料を配置し、依頼の温度を下げずにCTAまで運びます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof-section" aria-labelledby="proof-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Portfolio Proof</p>
+          <h2 id="proof-title">デザイナーとして評価される要素を、見た目の中に埋め込む。</h2>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-panel reveal">
+            <span class="card-number">A</span>
+            <h3>Visual Authority</h3>
+            <p>記事カバー、ケーススタディ、CMS画面まで同じアートディレクションで統一。画像がただの飾りではなく、制作思想の証拠として働きます。</p>
+          </article>
+          <article class="proof-panel reveal">
+            <span class="card-number">B</span>
+            <h3>Editorial Depth</h3>
+            <p>デザイン判断を記事として蓄積し、面談・営業・採用でそのまま説明材料にできる構造を持たせています。</p>
+          </article>
+          <article class="proof-panel reveal">
+            <span class="card-number">C</span>
+            <h3>Responsive Craft</h3>
+            <p>大きな見出し、横スクロールナビ、カード密度、画像比率をPC/スマホで調整し、派手さと読みやすさを両立します。</p>
+          </article>
+        </div>
+        <div class="visual-mosaic reveal" aria-label="Article cover previews">
+          <img src="assets/images/post1-cover.png" alt="Design Token記事のカバー画像" loading="lazy" />
+          <img src="assets/images/post2-cover.png" alt="色彩設計記事のカバー画像" loading="lazy" />
+          <img src="assets/images/post8-cover.png" alt="AI画像生成記事のカバー画像" loading="lazy" />
+          <img src="assets/images/post12-cover.png" alt="問い合わせフォームUX記事のカバー画像" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section design-system-section" aria-labelledby="system-title">
+      <div class="container design-system-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Design System</p>
+          <h2 id="system-title">色、文字、カード、CTAまで、ポートフォリオの人格を一貫させる。</h2>
+          <p>作品を見せるサイトほど、UIそのものが制作者の審美眼として見られます。ここでは、カバー画像の暗い質感に合わせて、アイボリーの文字、シアンの情報線、コーラルの行動色を絞って使っています。</p>
+        </div>
+        <div class="system-board reveal">
+          <div class="swatch-row" aria-label="Color palette">
+            <span style="--swatch: #f5f1e8">Ivory</span>
+            <span style="--swatch: #07090d">Ink</span>
+            <span style="--swatch: #5fd4e8">Cyan</span>
+            <span style="--swatch: #ff6b57">Coral</span>
+            <span style="--swatch: #b8e986">Lime</span>
+          </div>
+          <div class="type-sample">
+            <p class="meta">Type Rhythm</p>
+            <strong>Atelier Grid</strong>
+            <span>見出しは強く、本文は静かに。作品画像の情報量を受け止めるため、UIの装飾は線・余白・光量で制御します。</span>
+          </div>
+          <div class="component-sample">
+            <a class="btn btn-primary" href="#journal">Journal</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-band" id="cases">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Case Modules</p>
+          <h2>採用担当者やクライアントが見たい要素を、ケース別に整理。</h2>
+        </div>
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <p class="meta">Brand System</p>
+            <h3>スタイルガイドを“納品物”ではなく、運用資産として見せる。</h3>
+            <p>色、文字、コンポーネント、写真方針を一画面で把握できるようにまとめ、デザイン判断の再現性を示します。</p>
+            <span class="case-stat">Consistency +42%</span>
+          </article>
+          <article class="case-card reveal">
+            <p class="meta">Landing Page</p>
+            <h3>ファーストビューからCTAまで、視線の流れを設計する。</h3>
+            <p>読者が迷わずスクロールできるよう、見出し、証拠、比較、次の行動をリズムよく接続します。</p>
+            <span class="case-stat">Scroll Depth +31%</span>
+          </article>
+          <article class="case-card reveal">
+            <p class="meta">CMS Journal</p>
+            <h3>記事を増やすほど、制作者の信頼が積み上がる構造に。</h3>
+            <p>単発のブログではなく、専門性・思考・改善履歴が残る編集アーカイブとして設計します。</p>
+            <span class="case-stat">12 Articles Ready</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Process</p>
+          <h2>華やかさの裏側に、説明できる制作プロセスを置く。</h2>
+        </div>
+        <div class="process-rail">
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Audit</h3>
+            <p>現状の作品、文章、導線を棚卸しし、足りない判断材料を特定します。</p>
+          </article>
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Positioning</h3>
+            <p>誰に選ばれたいのかを明確にし、見せる順番と語る角度を決めます。</p>
+          </article>
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Visual System</h3>
+            <p>色、写真、余白、カード、CTAを揃え、ページ全体の密度を設計します。</p>
+          </article>
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>CMS Build</h3>
+            <p>記事カード、カテゴリ、タグ、関連記事を増やしやすい形に分解します。</p>
+          </article>
+          <article class="process-step reveal">
+            <span>05</span>
+            <h3>Polish</h3>
+            <p>レスポンシブ、余白、hover、読みやすさを最後まで磨き込みます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section cms-section">
+      <div class="container split-grid reverse">
+        <div class="section-copy reveal">
+          <p class="eyebrow">CMS Architecture</p>
+          <h2>記事が増えるほど、デザイナーとしての専門性が伝わる。</h2>
+          <p>一覧ページは検索、カテゴリ、タグで絞り込み可能。投稿ページはリード、目次、本文、チェックリスト、関連記事を置ける構造にし、Headless CMSへ移行しやすい命名とデータ属性で整えています。</p>
+          <div class="spec-grid">
+            <p><strong>Taxonomy</strong><span>UI/UX、Branding、Workflow、Case Study</span></p>
+            <p><strong>Editorial</strong><span>12本の投稿ページと専用アイキャッチ</span></p>
+            <p><strong>Interaction</strong><span>検索、タグチップ、件数表示、読了バー</span></p>
+            <p><strong>Scale</strong><span>microCMS / Contentful / Strapiへ接続しやすい構成</span></p>
+          </div>
+        </div>
+        <figure class="media-frame reveal">
+          <img src="assets/images/cms-dashboard.png" alt="CMS記事運用をイメージしたダッシュボードのビジュアル" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section journal-section" id="journal">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Design Journal</p>
+          <h2>CMS投稿ページ12本すべてに、専用アイキャッチと編集導線を持たせる。</h2>
+        </div>
+
+        <div class="blog-controls reveal">
+          <label class="control-label" for="search">Search</label>
+          <input id="search" type="search" placeholder="Figma、導線、CMSなどで検索" />
+          <label class="control-label" for="category">Category</label>
+          <select id="category">
+            <option value="all">全カテゴリー</option>
+            <option value="uiux">UI/UX</option>
+            <option value="branding">Branding</option>
+            <option value="workflow">Workflow</option>
+            <option value="case">Case Study</option>
+          </select>
+        </div>
+
+        <div class="tag-row reveal" aria-label="Tag filters">
+          <button class="tag-chip is-active" type="button" data-tag="all" aria-pressed="true">All</button>
+          <button class="tag-chip" type="button" data-tag="figma" aria-pressed="false">Figma</button>
+          <button class="tag-chip" type="button" data-tag="cms" aria-pressed="false">CMS</button>
+          <button class="tag-chip" type="button" data-tag="proposal" aria-pressed="false">Proposal</button>
+          <button class="tag-chip" type="button" data-tag="accessibility" aria-pressed="false">Accessibility</button>
+          <button class="tag-chip" type="button" data-tag="ai-visual" aria-pressed="false">AI Visual</button>
+        </div>
+
+        <p id="result-count" class="result-count" aria-live="polite">12件の記事を表示中</p>
+
+        <div class="post-list">
+          <article class="post-card featured-post reveal" data-category="uiux" data-tags="figma token component" data-search="figma design token uiux コンポーネント">
+            <a class="post-thumb" href="posts/post-1.html"><img src="assets/images/post1-cover.png" alt="FigmaのDesign Token運用テンプレートの記事カバー" loading="lazy" /></a>
+            <p class="meta">UI/UX • 2026-04-12</p>
+            <h3><a href="posts/post-1.html">FigmaのDesign Tokenを使った運用テンプレート</a></h3>
+            <p>チーム制作で崩れがちな一貫性を、トークン管理で最小コストに保つ方法。</p>
+          </article>
+          <article class="post-card reveal" data-category="branding" data-tags="brand color" data-search="ブランド戦略 色彩設計 ロゴ カラー">
+            <a class="post-thumb" href="posts/post-2.html"><img src="assets/images/post2-cover.png" alt="ブランド体験を強化する色彩設計の記事カバー" loading="lazy" /></a>
+            <p class="meta">Branding • 2026-04-16</p>
+            <h3><a href="posts/post-2.html">ブランド体験を強化する色彩設計の実務フロー</a></h3>
+            <p>印象だけではなく、KPIに効くカラールールの定義と検証手順。</p>
+          </article>
+          <article class="post-card reveal" data-category="workflow" data-tags="notion cms" data-search="notion ai workflow 進行管理 案件">
+            <a class="post-thumb" href="posts/post-3.html"><img src="assets/images/post3-cover.png" alt="Notionでつくるデザイン案件の進行管理ボードの記事カバー" loading="lazy" /></a>
+            <p class="meta">Workflow • 2026-04-20</p>
+            <h3><a href="posts/post-3.html">Notionでつくるデザイン案件の進行管理ボード</a></h3>
+            <p>ヒアリングから納品までを見える化し、手戻りを減らすボード設計。</p>
+          </article>
+          <article class="post-card reveal" data-category="uiux" data-tags="accessibility responsive" data-search="アクセシビリティ WCAG レスポンシブ 実装">
+            <a class="post-thumb" href="posts/post-4.html"><img src="assets/images/post4-cover.png" alt="アクセシビリティを壊さないレスポンシブ実装術の記事カバー" loading="lazy" /></a>
+            <p class="meta">UI/UX • 2026-04-24</p>
+            <h3><a href="posts/post-4.html">アクセシビリティを壊さないレスポンシブ実装術</a></h3>
+            <p>見栄えと使いやすさの両立を実現する、実装前チェックリスト。</p>
+          </article>
+          <article class="post-card reveal" data-category="workflow" data-tags="proposal portfolio" data-search="ポートフォリオ 提案資料 受注率 導線">
+            <a class="post-thumb" href="posts/post-5.html"><img src="assets/images/post5-cover.png" alt="ポートフォリオを受注導線に変える提案ページの記事カバー" loading="lazy" /></a>
+            <p class="meta">Workflow • 2026-04-28</p>
+            <h3><a href="posts/post-5.html">ポートフォリオを受注導線に変える提案ページ構成</a></h3>
+            <p>「見せるだけ」から「依頼したくなる」へ変える構成テンプレート。</p>
+          </article>
+          <article class="post-card reveal" data-category="case" data-tags="case proposal" data-search="ケーススタディ 採用担当者 3分 成果">
+            <a class="post-thumb" href="posts/post-6.html"><img src="assets/images/post6-cover.png" alt="採用担当者に3分で伝わるケーススタディ設計の記事カバー" loading="lazy" /></a>
+            <p class="meta">Case Study • 2026-05-02</p>
+            <h3><a href="posts/post-6.html">採用担当者に3分で伝わるケーススタディ設計</a></h3>
+            <p>課題、仮説、成果を短時間で理解できるページ構成の作り方。</p>
+          </article>
+          <article class="post-card reveal" data-category="workflow" data-tags="cms editorial" data-search="CMS 編集カレンダー 記事 運用">
+            <a class="post-thumb" href="posts/post-7.html"><img src="assets/images/post7-cover.png" alt="CMS記事をポートフォリオ資産に変える編集カレンダーの記事カバー" loading="lazy" /></a>
+            <p class="meta">Workflow • 2026-05-06</p>
+            <h3><a href="posts/post-7.html">CMS記事をポートフォリオ資産に変える編集カレンダー</a></h3>
+            <p>思考の蓄積が営業資料になる、記事テーマと更新ペースの設計。</p>
+          </article>
+          <article class="post-card reveal" data-category="branding" data-tags="ai-visual art-direction" data-search="AI画像生成 アートディレクション ビジュアル">
+            <a class="post-thumb" href="posts/post-8.html"><img src="assets/images/post8-cover.png" alt="AI画像生成をWeb制作に組み込むアートディレクションの記事カバー" loading="lazy" /></a>
+            <p class="meta">Branding • 2026-05-09</p>
+            <h3><a href="posts/post-8.html">AI画像生成をWeb制作に組み込むアートディレクション</a></h3>
+            <p>生成画像を“飾り”で終わらせず、ブランド体験に接続する手順。</p>
+          </article>
+          <article class="post-card reveal" data-category="uiux" data-tags="landing proposal" data-search="LP ファーストビュー 情報設計 導線">
+            <a class="post-thumb" href="posts/post-9.html"><img src="assets/images/post9-cover.png" alt="LPのファーストビューを強くする情報設計の記事カバー" loading="lazy" /></a>
+            <p class="meta">UI/UX • 2026-05-12</p>
+            <h3><a href="posts/post-9.html">LPのファーストビューを強くする情報設計</a></h3>
+            <p>見た目の強さと、次に読む理由を同時に作るファーストビュー設計。</p>
+          </article>
+          <article class="post-card reveal" data-category="uiux" data-tags="figma accessibility" data-search="デザインシステム 監査 コンポーネント UI">
+            <a class="post-thumb" href="posts/post-10.html"><img src="assets/images/post10-cover.png" alt="デザインシステムの監査チェックリストの記事カバー" loading="lazy" /></a>
+            <p class="meta">UI/UX • 2026-05-14</p>
+            <h3><a href="posts/post-10.html">デザインシステムの監査チェックリスト</a></h3>
+            <p>崩れたルールを責めずに直せる、現場向けの監査フレーム。</p>
+          </article>
+          <article class="post-card reveal" data-category="branding" data-tags="proposal price" data-search="価格表 サービスページ 料金 信頼">
+            <a class="post-thumb" href="posts/post-11.html"><img src="assets/images/post11-cover.png" alt="価格表を怖く見せないサービスページ設計の記事カバー" loading="lazy" /></a>
+            <p class="meta">Branding • 2026-05-16</p>
+            <h3><a href="posts/post-11.html">価格表を怖く見せないサービスページ設計</a></h3>
+            <p>金額を出すほど信頼が増す、比較と安心材料の置き方。</p>
+          </article>
+          <article class="post-card reveal" data-category="workflow" data-tags="accessibility form" data-search="問い合わせフォーム UX フリーランス 入力">
+            <a class="post-thumb" href="posts/post-12.html"><img src="assets/images/post12-cover.png" alt="フリーランスのための問い合わせフォームUXの記事カバー" loading="lazy" /></a>
+            <p class="meta">Workflow • 2026-05-18</p>
+            <h3><a href="posts/post-12.html">フリーランスのための問い合わせフォームUX</a></h3>
+            <p>相談前の不安を減らし、質の高い依頼につなげる入力体験。</p>
+          </article>
+        </div>
+        <p id="empty-state" class="empty-state" hidden>条件に合う記事がありません。検索語やカテゴリを変えてみてください。</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>ポートフォリオとして見せるだけでなく、依頼につながる余白を残す。</h2>
+          <p>このデモは、将来的にプロフィール、制作実績、問い合わせフォーム、CMS API、OGP自動生成まで拡張できます。今は静的HTMLのまま、完成イメージが伝わる密度まで引き上げています。</p>
+        </div>
+        <div class="contact-panel reveal">
+          <p class="meta">Next Build Ideas</p>
+          <ul class="check-list">
+            <li>microCMS連携で記事を自動表示</li>
+            <li>作品詳細ページとBefore/After比較</li>
+            <li>問い合わせフォームと自動返信メール</li>
+            <li>OGP画像の自動生成テンプレート</li>
+          </ul>
+          <a class="btn btn-primary" href="#journal">Journalへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>© 2026 Atelier Grid.</p>
+      <p>直作: 知足湧生（ともたりはるき）</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

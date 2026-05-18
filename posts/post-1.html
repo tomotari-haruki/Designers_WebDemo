@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FigmaのDesign Tokenを使い、コンポーネント品質と運用品質を揃えるための実務テンプレート。" />
+  <title>FigmaのDesign Tokenを使った運用テンプレート | Atelier Grid</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="article-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html"><span class="brand-mark">AG</span><span>Atelier Grid</span></a>
+      <nav class="nav-links" aria-label="Article navigation"><a href="../index.html#journal">Journal</a><a href="../index.html#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container article-shell">
+    <article>
+      <header class="article-hero">
+        <div>
+          <p class="eyebrow">UI/UX / Figma</p>
+          <h1>FigmaのDesign Tokenを使った運用テンプレート</h1>
+          <p class="article-lede">色、余白、文字、角丸、影を感覚で管理すると、ページが増えるほど微差が積もります。Design Tokenは、その微差をチームで直せる言語に変える仕組みです。</p>
+        </div>
+        <div class="article-meta-grid">
+          <p><strong>Published</strong><span>2026-04-12</span></p>
+          <p><strong>Read Time</strong><span>7 min</span></p>
+          <p><strong>Focus</strong><span>Token / Component / QA</span></p>
+        </div>
+      </header>
+      <figure class="article-cover"><img src="../assets/images/post1-cover.png" alt="Design Token運用を表現した記事カバー" /></figure>
+      <div class="article-layout">
+        <aside class="article-aside">
+          <nav aria-label="Table of contents"><p class="meta">Contents</p><a href="#setup">初期設計</a><a href="#operation">運用ルール</a><a href="#checklist">チェックリスト</a></nav>
+          <div class="article-note"><p class="meta">Takeaway</p><p>トークンは命名より先に、変更される理由を定義すると崩れにくくなります。</p></div>
+        </aside>
+        <div class="article-content">
+          <h2 id="setup">初期設計は“見た目”ではなく“役割”で分ける</h2>
+          <p>最初に決めるべきなのは、PrimaryやSecondaryの色名ではありません。その色が何を伝えるために存在するのかです。例えば、行動を促す色、警告する色、背景に沈む色、情報を区切る線。それぞれ役割を持たせると、あとからブランドカラーが変わっても構造を保てます。</p>
+          <p>Figmaでは、Primitive TokenとSemantic Tokenを分けると運用しやすくなります。Primitiveは実数値、Semanticは用途です。デザイナーが触るのは主にSemanticにし、実装側との対応もそこに寄せます。</p>
+          <blockquote class="article-quote">“きれいな命名”よりも、“迷った時に戻れる判断基準”の方が現場では強い。</blockquote>
+          <h2 id="operation">運用ルールはコンポーネントの近くに置く</h2>
+          <p>ルールを別ドキュメントに逃がすと、制作中に読まれません。ボタン、カード、フォームなどのコンポーネントページに、使用するトークンと禁止パターンを短く添えるだけで、レビューの会話がかなり軽くなります。</p>
+          <h3>レビューで見るポイント</h3>
+          <ul>
+            <li>直接HEXを指定している箇所がないか</li>
+            <li>余白がコンポーネント単位で再利用できるか</li>
+            <li>ライト/ダークの切り替えに耐えられるか</li>
+            <li>実装上の変数名と意味がずれていないか</li>
+          </ul>
+          <h2 id="checklist">チェックリスト</h2>
+          <p>公開前には、主要画面を横に並べて、トークンの揺れを確認します。細部を一つずつ直すより、まず一覧性を作ること。違和感のある箇所だけを拾えば、短時間でも品質が上がります。</p>
+          <div class="article-footer-cta"><strong>Next:</strong> このテンプレートは、CMS記事のデザイン解説や制作実績ページにも転用できます。</div>
+        </div>
+      </div>
+    </article>
+    <section class="related-section">
+      <p class="eyebrow">Related</p>
+      <div class="related-grid">
+        <a class="related-card" href="post-10.html"><p class="meta">UI/UX</p><h3>デザインシステムの監査チェックリスト</h3></a>
+        <a class="related-card" href="post-4.html"><p class="meta">UI/UX</p><h3>アクセシビリティを壊さないレスポンシブ実装術</h3></a>
+        <a class="related-card" href="../index.html#journal"><p class="meta">Journal</p><h3>記事一覧へ戻る</h3></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-grid"><p>© 2026 Atelier Grid.</p><p>直作: 知足湧生（ともたりはるき）</p></div></footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

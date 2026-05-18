@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Atelier Grid favicon</title>
+  <rect width="64" height="64" rx="12" fill="#07090d"/>
+  <path d="M12 48 26 14h12l14 34H41l-2.5-7H25.3L22.8 48H12Zm16-16h7.8L32 21.3 28 32Z" fill="#f5f1e8"/>
+  <path d="M45 18h7v7h-7zM45 29h7v7h-7zM45 40h7v7h-7z" fill="#5fd4e8"/>
+  <path d="M12 54h40" stroke="#ff6b57" stroke-width="3" stroke-linecap="round"/>
+</svg>
